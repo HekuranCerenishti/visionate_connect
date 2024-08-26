@@ -1,0 +1,58 @@
+.header {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+}
+
+.headerContainer {
+    width: 100%;
+    display: flex; 
+    align-items: center;   
+}
+
+.logo {
+    word-wrap: break-word;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(67, 67, 161);
+}
+
+.tabs {
+    padding-top: 20px; 
+    padding-left: 50px;
+}
+
+.home {
+    font-size: 15px;
+    color: black;
+    border-bottom: 3px solid rgb(67, 67, 161);
+    padding-bottom: 10px
+}
+
+.login {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: rgb(67, 67, 161);
+    background-color: transparent;
+    font-weight: 600;
+    border-right: 1px solid #ddd;
+}
+
+.signup  {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: rgb(67, 67, 161);
+    background-color: transparent;
+    font-weight: 600;
+}
+.buttons {
+    display: block;
+    margin-left: auto;
+    padding-right: 30px;
+} 
