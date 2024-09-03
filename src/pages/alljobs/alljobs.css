@@ -1,0 +1,34 @@
+.container {
+    max-width: 800px;
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-subtitle {
+    font-size: 0.9rem;
+  }
+
+.search  {
+ 
+  box-shadow: #88a0c9 4px 4px 0 0;
+ 
+ 
+}
+
+@media (min-width: 768px) {
+.search {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+
+  

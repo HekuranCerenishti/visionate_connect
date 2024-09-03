@@ -1,19 +1,21 @@
+import { Form, Nav, Navbar } from "react-bootstrap"
 import "./header.css"
- const Header = () => {
+import { useNavigate } from "react-router-dom"
+const Header = () => {
+    const navigate = useNavigate();
     return (
-        <div className="header">
-            <div className="headerContainer">
-                <div className="logo">Visionate Connect</div>
-                <div className="tabs">
-                    <div className="home">Home</div>
-                </div>
-                <div className="buttons">
-                    <button className="login">Log In</button>
-                    <button className="signup">Sign Up</button>
+        <Form>
+            <div className="header">
+                <div className="headerContainer">
+                <Nav.Link style={{paddingLeft:"30px",fontWeight:"600",fontSize:"20px",fontFamily:"cursive",color:"rgb(106 164 144)"}} href="/">Visionate Connection</Nav.Link>                    
+                    <div className="buttons">
+                        <button onClick={()=>navigate("/login")} className="login">Log In</button>
+                        <button onClick={()=>navigate("/signup")} className="sign-up">Sign Up</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </Form>
     )
- }
+}
 
- export default Header
+export default Header
