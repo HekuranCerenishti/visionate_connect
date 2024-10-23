@@ -1,10 +1,11 @@
 
 import { Container } from 'react-bootstrap';
 import HomeSection from "../HomeSections/HomeSection";
-
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Home = () => {
 
+const navigate = useNavigate();
     const sections = [
         {
             backgroundColor: "#ededed",
@@ -17,7 +18,8 @@ const Home = () => {
             image: {
                 paddingTop: "40px" ,
                 src: 'images/findjob-removebg-preview.png',
-            }
+            },
+            action: () => navigate("/alljobs")
         },
         {
             backgroundColor:"rgb(212 226 221)",
@@ -31,7 +33,8 @@ const Home = () => {
                 paddingTop: "30px" ,
                 paddingLeft: "100px",
                 src: 'images/job.png',
-            }
+            },
+            action: () => alert("TODO HOME")
         },
         {
             backgroundColor:"rgb(238 237 222)",
@@ -44,7 +47,8 @@ const Home = () => {
             image: {
                 paddingTop: "25px" ,
                 src: 'images/postjob.png'
-            }
+            },
+            action: () => alert("TODO POST")
         },
     ]
     return (   

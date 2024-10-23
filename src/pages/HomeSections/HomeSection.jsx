@@ -19,7 +19,7 @@ const HomeSection = ({ index, sectionProps }) => {
                     <h1 style={{color:"#97c5d3",fontSize:"20px"}} className="cardtitle">Visionate Connect</h1>
                     <p style={{fontSize:"45px", fontFamily:"fantasy",color:"black"}} className="mb-2 text-muted">{sectionProps.paragraphMessages.p1}</p>
                     <p style={{fontSize:"20px"}}>{sectionProps.paragraphMessages.p2}</p>
-                    <button type="submit" onClick={()=>navigate("/alljobs")} className="searchnow">{sectionProps.button}</button>
+                    <button type="submit" onClick={()=>sectionProps.action()} className="searchnow">{sectionProps.button}</button>
                 </div>
             
         
@@ -38,7 +38,7 @@ const HomeSection = ({ index, sectionProps }) => {
                     <h1 style={{color:"#97c5d3",fontSize:"20px"}} className="cardtitle">Visionate Connect</h1>
                     <p style={{fontSize:"45px", fontFamily:"fantasy",color:"black"}} className="mb-2 text-muted">{sectionProps.paragraphMessages.p1}</p>
                     <p style={{fontSize:"20px"}}>{sectionProps.paragraphMessages.p2}</p>
-                    <button type="submit" onClick={()=>navigate("/alljobs")} className="searchnow">{sectionProps.button}</button>
+                    <button type="submit" onClick={()=>sectionProps.action()} className="searchnow">{sectionProps.button}</button>
                 </div>
             
         
