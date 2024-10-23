@@ -5,6 +5,7 @@ import Signup from './pages/sign-up/Signup';
 import Header from './components/header/Header';
 import { NavigationPage } from './components/navigation/NavigationPage';
 import AllJobs from './pages/alljobs/AllJobs';
+import AdminDashboard from './pages/admin/AdminDashboard';
 
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
-          <Route path="/alljobs" element={<AllJobs/>} />
+          <Route path="/alljobs" element={<AllJobs/>} />       
+          <Route path="/admin" element={<AdminDashboard/>} /> 
+
 
         </Routes>
       </BrowserRouter>
